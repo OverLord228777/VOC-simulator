@@ -17,17 +17,6 @@ namespace VOC_simulator
             Console.WriteLine(intro);
         }
 
-        public static void signUp(string login, string pswd)
-        {
-            string path = "base.txt";
-            File.AppendAllText(path, login);
-            File.AppendAllText(path, ":");
-            File.AppendAllText(path, pswd);
-            File.AppendAllText(path, "\n");
-
-            Base.createBase();
-            Base.insertLoginAndPassword(login, pswd);
-        }
         public static string getApiKey()
         {
             string path = "api.txt";        // add your API key from openweathermap.org

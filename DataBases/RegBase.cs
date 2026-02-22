@@ -2,7 +2,7 @@
 
 namespace VOC_simulator
 {
-    internal class Base
+    internal class RegBase
     {
         public static void createBase()
         {

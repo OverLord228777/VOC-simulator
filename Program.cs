@@ -5,8 +5,8 @@
         static async Task Main(string[] args)
         {
             Menu.showIntro();
-            Menu.signUp("Vasya228", "228");
-            Base.selectLoginAndPassword();
+            Registration.signUp("Vasya228", "228");
+            RegBase.selectLoginAndPassword();
             Capitan capitan = new Capitan();
             string api = Menu.getApiKey();
             await capitan.goToExpedition("Amsterdam", api);

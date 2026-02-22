@@ -12,9 +12,9 @@ namespace VOC_simulator
         {
             string login = "gg";
             string pswd = "";
-            Base.createBase();
-            Base.insertLoginAndPassword(login, pswd);
-            Base.selectLoginAndPassword();
+            RegBase.createBase();
+            RegBase.insertLoginAndPassword(login, pswd);
+            RegBase.selectLoginAndPassword();
         }
     }
 }
