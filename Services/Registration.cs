@@ -8,16 +8,21 @@ namespace VOC_simulator
 {
     internal class Registration
     {
-        public static void signUp(string login, string pswd)
+        public static void signUp(string login, string pswd, string role)
         {
-            string path = "base.txt";
-            File.AppendAllText(path, login);
-            File.AppendAllText(path, ":");
-            File.AppendAllText(path, pswd);
-            File.AppendAllText(path, "\n");
+            //string path = "base.txt";
+            //File.AppendAllText(path, login);
+            //File.AppendAllText(path, ":");
+            //File.AppendAllText(path, pswd);
+            //File.AppendAllText(path, "\n");
 
-            RegBase.createBase();
-            RegBase.insertLoginAndPassword(login, pswd);
+            RegBase.createRegBase();
+            RegBase.insertLoginAndPassword(login, pswd, role);
+        }
+
+        public static void signIn(string login, string pswd)
+        {
+
         }
     }
 }
