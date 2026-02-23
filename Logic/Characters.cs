@@ -21,6 +21,7 @@ namespace VOC_simulator
         }
     }
 
+    // Капитан корабля
     public class Capitan : Characters
     {
         public async Task goToExpedition(string city, string apiKey)
@@ -35,5 +36,19 @@ namespace VOC_simulator
                 Console.WriteLine("ploho");
             }
         }
+    }
+
+    // Губернатор города
+    public class Governor : Characters
+    {
+        // Город, которым управляет губернатор
+        public City City { get; set; }
+    }
+
+    // Директор торговой компании
+    public class Director : Characters
+    {
+        // Компания, которой управляет директор
+        public Company Company { get; set; }
     }
 }
